@@ -14,3 +14,9 @@ test('test case',()=>{
   expect(linkElement).toBeInTheDocument();
 })
 
+test('test case 1',()=>{
+  const {getByText} = render(<App/>);
+  const linkElement = getByText(/Hello sir/i);
+  expect(linkElement).toBeInTheDocument();
+})
+
